@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<!--
+		These definitions intentionally reuse CoreRPG icon resource names. Themes can
+		override the resources without Hidden Dice shipping or forcing bitmap assets.
+	-->
+	<template name="button_roll">
+		<buttoncontrol>
+			<anchored width="20" height="20" />
+			<icon normal="button_roll" pressed="button_roll_down" />
+			<hiddendice_normal>button_roll</hiddendice_normal>
+			<hiddendice_pressed>button_roll_down</hiddendice_pressed>
+			<script file="scripts/button_hidden_dice.lua" />
+		</buttoncontrol>
+	</template>
+
+	<template name="button_roll_light">
+		<buttoncontrol>
+			<anchored width="20" height="20" />
+			<icon normal="button_roll_light" pressed="button_roll_light_down" />
+			<hiddendice_normal>button_roll_light</hiddendice_normal>
+			<hiddendice_pressed>button_roll_light_down</hiddendice_pressed>
+			<script file="scripts/button_hidden_dice.lua" />
+		</buttoncontrol>
+	</template>
+
+	<!--
+		CoreRPG resolves this wrapper before extensions are loaded, so redefining the
+		base button_roll template alone does not update skill-list roll buttons.
+	-->
+	<template name="button_listitem_roll_right">
+		<buttoncontrol>
+			<anchored to="rightanchor" width="20" height="20">
+				<top />
+				<right relation="relative" offset="-2" postoffset="-2" />
+			</anchored>
+			<icon normal="button_roll" pressed="button_roll_down" />
+			<hiddendice_normal>button_roll</hiddendice_normal>
+			<hiddendice_pressed>button_roll_down</hiddendice_pressed>
+			<script file="scripts/button_hidden_dice.lua" />
+		</buttoncontrol>
+	</template>
+</root>

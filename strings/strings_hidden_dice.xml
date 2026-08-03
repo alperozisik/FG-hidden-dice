@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+	<string name="hiddendice_menu_toggle">Toggle hidden roll</string>
+	<string name="hiddendice_menu_set_hidden_all">Set hidden for all</string>
+	<string name="hiddendice_menu_set_visible_all">Set visible for all</string>
+	<string name="option_label_HDHM">Hidden Dice Handle</string>
+	<string name="hiddendice_option_handle_button_modifier">Button &amp; Modifier</string>
+	<string name="hiddendice_option_handle_button_only">Button only</string>
+</root>
