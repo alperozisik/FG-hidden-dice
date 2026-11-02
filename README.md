@@ -47,6 +47,7 @@ For hidden player rolls, the player receives the normal dice-tower submission fe
 
 - Fantasy Grounds Unity
 - D&D 5E ruleset, release 9 or later
+- Requested Rolls requests bypass Hidden Dice so that Requested Rolls retains control of player prompts, GM rolls, and result visibility.
 
 ## Build
 

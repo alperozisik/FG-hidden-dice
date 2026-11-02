@@ -327,6 +327,13 @@ end
 function performAction(draginfo, rActor, rRoll)
 	local c = _cPendingRoll;
 	_cPendingRoll = nil;
+
+	-- Requested Rolls owns its roll-routing workflow. Let it decide whether a
+	-- request is shown to the player, rolled by the GM, or sent to the tower.
+	if rRoll and rRoll.RR then
+		return _fOriginalPerformAction(draginfo, rActor, rRoll);
+	end
+
 	local tInfo = c and _tControls[c] or nil;
 	if not tInfo and OptionsManager.isOption(OPTION_HANDLE_MODE, "both") then
 		tInfo = getRollInfo(rActor, rRoll);
