@@ -98,6 +98,10 @@ Use `docs/forge/images/hidden-dice-cover-forge.jpg` as the first Forge image. It
 
 The cover is a 1200 x 800 JPEG below 300 KB. Its generation prompt is recorded in `docs/forge/image-prompt.txt`. The source PNG is retained outside this repository as the archival original; only the Forge-ready JPEG belongs in the repository.
 
+Use `docs/forge/images/hidden-dice-icon.png` as the small product or listing icon where a square raster image is required. The matching editable source is `docs/forge/images/hidden-dice-icon.svg`. This original mark combines a dice tower, a partially concealed d20, and a GM screen; it does not reuse Fantasy Grounds or theme artwork.
+
+The product icon is a marketing asset only. Do not add it to the extension runtime package or use it to replace the theme-native character-sheet roll and dice-tower resources.
+
 ## Required real product screenshots
 
 No real product screenshots are included yet. Capture these after the current live extension test queue is complete and add them after the theoretical cover image:
