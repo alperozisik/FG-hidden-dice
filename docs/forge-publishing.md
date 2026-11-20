@@ -1,12 +1,33 @@
-# Forge Publishing Copy
+# Forge Publishing Record and Copy
 
-This file contains the prepared copy and asset checklist for the first Fantasy Grounds Forge listing. Replace bracketed placeholders before publishing.
+This file contains the approved copy, current submission state, and remaining checklist for the first Fantasy Grounds Forge listing.
+
+## Current publication status — 2026-11-20
+
+- **Forge item:** [Hidden Dice, item 3792](https://forge.fantasygrounds.com/shop/items/3792/view)
+- **UUID:** `4b06c266-e4b7-11f1-a411-0050562be458`
+- **State:** Pending approval and review; not publicly accessible yet. The listing action did not activate the item while it was pending.
+- **Build:** v0.1.3 submitted and queued for processing; Live channel selection and updater delivery are not yet verified.
+- **Package SHA-256:** `7a73075838ccc99fb45ee88f69da643dcdd9574e53ce99f77dbe42d99940febe`, matching the GitHub v0.1.3 release.
+- **Price and type:** Free, 0 Gold; 5E Compatible Extension.
+- **Install location:** Data.
+- **Images:** Five uploaded and active; the 1200 × 800 cover is primary.
+- **Forum:** [Published support thread](https://www.fantasygrounds.com/forums/showthread.php?88611), titled **[EXT] Hidden Dice (5E) — choose which checks stay secret**.
+
+Do not describe the Forge item as live or published until its public page and updater delivery have both been verified.
 
 ## Documentation synchronization checklist
 
 - Update `README.md`, this Forge listing draft, screenshots, and the complete Settings value/default/scope notes together when user-facing behavior changes.
 - If a translated guide is added later, update it in the same documentation change.
 - After the Forge item is published, apply the same approved copy and image changes to the live listing in the same release-documentation pass.
+
+## Remaining steps after Forge approval
+
+1. Clean up the long-description formatting. The complete approved text was submitted, but the rich clipboard content was stored as plain Markdown; restore headings and spacing with the Forge editor controls rather than pasting HTML as visible text.
+2. When **Manage Item** is unlocked, set the forum thread to `88611`.
+3. Confirm that the build has finished processing, select its **Live** channel, list/activate the item, and verify both the public product page and Fantasy Grounds updater delivery.
+4. Remove the temporary pending-approval notice from forum post 1 only after the item is genuinely public and updater delivery is confirmed.
 
 ## Short description
 
@@ -52,7 +73,7 @@ Rolls initiated by Requested Rolls bypass Hidden Dice in either handling mode. R
 
 ### Installation and updates
 
-Add Hidden Dice to your Forge inventory and run **Check for Updates** from the Fantasy Grounds launcher. Enable **Hidden Dice** when loading a 5E campaign. Future Forge versions are delivered through the same updater.
+After the Forge item is approved, publicly listed, and its Live build is verified, add Hidden Dice to your Forge inventory and run **Check for Updates** from the Fantasy Grounds launcher. Enable **Hidden Dice** when loading a 5E campaign. Future Forge versions are delivered through the same updater.
 
 ### Support
 
@@ -60,19 +81,25 @@ Source, release notes, and bug reports: https://github.com/alperozisik/FG-hidden
 
 License: MIT. Hidden Dice is free.
 
-## Forum opening post
+## Published forum thread
 
-### Suggested title
+**Thread:** https://www.fantasygrounds.com/forums/showthread.php?88611
 
-`[Extension] Hidden Dice (5E)`
+**Title:** `[EXT] Hidden Dice (5E) — choose which checks stay secret`
 
-### Post body
+**Author:** `morfil`
+
+- Post 1 (`775974`): introduction, cover, installation, GitHub links, and a temporary Forge-pending notice.
+- Post 2 (`775975`): usage, complete Settings values, screenshot, hotbar behavior, and Requested Rolls compatibility.
+- Post 3 (`775976`): release notes, verification scope, and support guidance.
+
+### Approved post copy
 
 Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It lets the GM decide which supported character-sheet rolls default to hidden and which stay public, without requiring players to drag every secret roll to the dice tower manually.
 
 Use hidden Stealth checks when the character should not know how well they concealed themselves. Hide History or Arcana checks when the visible result would reveal too much about the reliability of the information the GM provides. Players keep using the normal character-sheet controls.
 
-**Forge:** [Forge item URL]
+**Forge:** https://forge.fantasygrounds.com/shop/items/3792/view — pending approval; not publicly available yet.
 
 **Source and releases:** https://github.com/alperozisik/FG-hidden-dice
 
@@ -91,7 +118,7 @@ This option determines which controls honor the selected state; it does not choo
 
 Requested Rolls requests bypass Hidden Dice, allowing Requested Rolls to retain control of prompts, GM rolls, and result visibility. The latest direct regression evidence for this integration is from v0.1.1; it was not repeated for v0.1.3.
 
-Installation is handled through the Forge and Fantasy Grounds updater. Add the item to your Forge inventory, run **Check for Updates**, and enable **Hidden Dice** when loading a 5E campaign.
+Until Forge approval and Live-channel verification are complete, install manually from the GitHub v0.1.3 release. Once the item is publicly listed and updater delivery is confirmed, add it to your Forge inventory, run **Check for Updates**, and enable **Hidden Dice** when loading a 5E campaign.
 
 When reporting a problem, please include:
 
