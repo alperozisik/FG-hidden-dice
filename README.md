@@ -61,6 +61,32 @@ The packaged extension is written to `dist/HiddenDice.ext`.
 
 ## Installation
 
+### Fantasy Grounds Forge
+
+Add Hidden Dice to your Forge inventory, make sure it is enabled there, and run **Check for Updates** from the Fantasy Grounds launcher. Forge items are delivered and updated through the Fantasy Grounds updater.
+
+### Manual installation
+
 Copy either the project directory or `dist/HiddenDice.ext` into the `extensions` directory under the Fantasy Grounds data directory. When both are present, Fantasy Grounds loads the project directory before the packaged `.ext` file with the same internal extension name.
 
 Enable **Hidden Dice** when loading a 5E campaign.
+
+## Updating
+
+- **Forge:** Run **Check for Updates** from the Fantasy Grounds launcher.
+- **Manual:** Replace the existing `HiddenDice.ext` with the newer file, then restart Fantasy Grounds.
+
+If a manually installed project directory and a packaged `.ext` file are both present, remove the project directory unless it is intentionally being used for development.
+
+## Removing
+
+Disable **Hidden Dice** for the campaign, then use the matching method:
+
+- **Forge:** Disable the item in the Forge inventory and run **Check for Updates**. If a manually installed copy also exists, remove it from the Fantasy Grounds `extensions` directory.
+- **Manual:** Delete `HiddenDice.ext` or the unpacked Hidden Dice project directory from the Fantasy Grounds `extensions` directory.
+
+Restart Fantasy Grounds after removing the extension.
+
+## Support
+
+Report bugs through the [GitHub issue tracker](https://github.com/alperozisik/FG-hidden-dice/issues). Include the Fantasy Grounds version, 5E ruleset version, enabled extensions, the roll type used, and any console error text.
