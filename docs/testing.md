@@ -17,6 +17,14 @@ This record separates completed manual evidence from the checks still required b
 - Added the `rRoll.RR` bypass and manually confirmed the Requested Rolls scenario after installation.
 - Published `HiddenDice.ext` with SHA-256 `EA7ECA1BC8CD5276D1CC03BC074AB9D16B7ED1251B44A8B1D48E437AFC7A232B`.
 
+### v0.1.2
+
+- Renamed the packaged MIT license from extensionless `LICENSE` to Forge-compatible `LICENSE.txt` while retaining `LICENSE` in the source repository.
+- Added build-time and post-archive validation against the Fantasy Grounds Forge file-extension whitelist.
+- Built a seven-file `HiddenDice.ext` package with no whitelist violations and SHA-256 `A8DEF971C1D2302B9D70EB840FD984E78FE384F0577B984E23CDB6952E2946EC`.
+- Confirmed that two consecutive builds produced the same SHA-256 hash.
+- No runtime behavior changed in this packaging-only release.
+
 ## Forge release-candidate checklist
 
 Run these checks with synthetic characters after the other live Fantasy Grounds test work is complete.

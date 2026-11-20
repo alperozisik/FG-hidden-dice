@@ -59,6 +59,8 @@ Run the build script from PowerShell:
 
 The packaged extension is written to `dist/HiddenDice.ext`.
 
+The build stages the repository's `LICENSE` file as `LICENSE.txt` inside the extension and rejects packaged file types outside the Fantasy Grounds Forge whitelist. A successful build prints the package SHA-256 hash.
+
 ## Installation
 
 ### Fantasy Grounds Forge

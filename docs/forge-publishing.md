@@ -64,7 +64,7 @@ Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It
 
 **Source and releases:** https://github.com/alperozisik/FG-hidden-dice
 
-**Current version:** v0.1.1
+**Current version:** v0.1.2
 
 **Requirements:** Fantasy Grounds Unity and the D&D 5E ruleset, release 9 or later.
 
@@ -87,6 +87,7 @@ When reporting a problem, please include:
 
 ### Changelog
 
+- **v0.1.2:** Updated the extension package for the Fantasy Grounds Forge file whitelist. The MIT license is included as `LICENSE.txt`, and the build now rejects unsupported file types.
 - **v0.1.1:** Added Requested Rolls compatibility so Requested Rolls controls its own delivery and visibility.
 - **v0.1.0:** Initial release.
 
