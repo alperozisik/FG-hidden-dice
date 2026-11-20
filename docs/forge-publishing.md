@@ -105,11 +105,10 @@ The product icon is a marketing asset only. Do not add it to the extension runti
 
 ## Required real product screenshots
 
-No real product screenshots are included yet. Capture these after the current live extension test queue is complete and add them after the theoretical cover image:
+Three real product screenshots from the isolated synthetic v0.1.2 QA campaign are included. Each is a tightly cropped JPEG below 300 KB:
 
-1. A 5E character sheet showing one visible-roll d20 button and one hidden-roll dice-tower button under the default theme.
-2. The radial menu showing **Toggle hidden roll** and the GM-only **Set hidden for all** and **Set visible for all** actions.
-3. The Fantasy Grounds Options window showing **Hidden Dice Handle** with both available values documented.
-4. Optional: a player hidden-roll submission together with the GM-side result or a Hidden Dice hotbar shortcut.
+1. `docs/forge/images/hidden-dice-hidden-icon.jpg` shows the theme-native dice-tower button on a synthetic character sheet.
+2. `docs/forge/images/hidden-dice-radial-menu.jpg` shows **Toggle hidden roll** and the GM-only **Set hidden for all** and **Set visible for all** actions.
+3. `docs/forge/images/hidden-dice-privacy-feedback.jpg` shows GM-side tower results alongside a visible control roll.
 
-Use synthetic characters and roll data. Do not show campaign names, player identities, server aliases, chat history, or unrelated extensions. Crop tightly and export web-ready PNG or JPG files; keep each image below the Forge upload limit.
+The screenshots use synthetic characters and roll data and do not show a live campaign name or server alias. An Options screenshot is intentionally not included because the **Hidden Dice Handle** entry was not located during the current FG v5.1.15 focused check; that gap is recorded in `docs/testing.md`.

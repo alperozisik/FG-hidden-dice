@@ -25,9 +25,29 @@ This record separates completed manual evidence from the checks still required b
 - Confirmed that two consecutive builds produced the same SHA-256 hash.
 - No runtime behavior changed in this packaging-only release.
 
+Focused native Fantasy Grounds QA was run on 2026-11-20 in a separate synthetic campaign with a separately named QA extension package. The existing installed `HiddenDice.ext` and live campaigns were not used or overwritten.
+
+- Fantasy Grounds v5.1.15 (2026-10-28).
+- Dungeons and Dragons (5E) ruleset (2026-10-06).
+- Default theme; only the separately named Hidden Dice QA package enabled.
+- Verified the normal d20 button changes to the theme-native dice-tower button and returns to the normal d20 after toggling visible.
+- Verified the GM-only radial actions are present.
+- Verified **Set hidden for all** and **Set visible for all** across two synthetic characters.
+- Verified the hidden global state remains after closing and reopening the synthetic campaign.
+- Verified player hidden rolls show tower submission feedback without the result, while the GM sees the tower results. A visible control roll showed the result to the player.
+- Verified the player radial menu does not show the GM-only global actions.
+- No Hidden Dice Lua error was observed during the focused session.
+
+The following v0.1.2 gaps remain explicit:
+
+- The **Hidden Dice Handle** entry could not be found in the Options window on this FG/5E build, so the **Button & Modifier** versus **Button only** boundary was not re-verified in this session.
+- Requested Rolls was not enabled in this focused packaging check. The v0.1.1 `rRoll.RR` bypass remains the latest direct Requested Rolls evidence; v0.1.2 does not change runtime code.
+- Physical hotbar drag-and-drop was not repeated. The latest direct hotbar evidence remains v0.1.0.
+- The 2014/2024 content paths, alternate themes, additional Requested Rolls variants, and the complete supported-roll matrix were not rerun.
+
 ## Forge release-candidate checklist
 
-Run these checks with synthetic characters after the other live Fantasy Grounds test work is complete.
+Run the remaining checks with synthetic characters before claiming broader compatibility than the focused evidence above.
 
 ### Environment
 

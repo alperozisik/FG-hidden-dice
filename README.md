@@ -4,6 +4,10 @@ Hidden Dice is a Fantasy Grounds Unity extension for the D&D 5E ruleset. It lets
 
 The extension does not include replacement graphics. Normal-roll and dice-tower buttons use the resources supplied by the active ruleset or theme.
 
+![GM radial menu with Hidden Dice controls](docs/forge/images/hidden-dice-radial-menu.jpg)
+
+![Hidden roll privacy: tower results for the GM and a visible control](docs/forge/images/hidden-dice-privacy-feedback.jpg)
+
 ## Features
 
 - Toggle hidden rolling independently for supported rolls on each character sheet.
@@ -48,6 +52,8 @@ For hidden player rolls, the player receives the normal dice-tower submission fe
 - Fantasy Grounds Unity
 - D&D 5E ruleset, release 9 or later
 - Requested Rolls requests bypass Hidden Dice so that Requested Rolls retains control of player prompts, GM rolls, and result visibility.
+
+The v0.1.2 release is packaging-only and uses the same runtime behavior as v0.1.1.
 
 ## Build
 
