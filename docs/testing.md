@@ -45,6 +45,21 @@ The following v0.1.2 gaps remain explicit:
 - Physical hotbar drag-and-drop was not repeated. The latest direct hotbar evidence remains v0.1.0.
 - The 2014/2024 content paths, alternate themes, additional Requested Rolls variants, and the complete supported-roll matrix were not rerun.
 
+### v0.1.3
+
+Focused native Fantasy Grounds QA was run on 2026-11-20 in a separate synthetic campaign with a separately named QA extension package. The installed release extension and live campaigns were not overwritten.
+
+- Fantasy Grounds v5.1.15 (2026-10-28).
+- Dungeons and Dragons (5E) ruleset (2026-10-06).
+- Default theme; only the separately named Hidden Dice QA package enabled.
+- Verified the **Hidden Dice Handle** entry appears under the **Game** group in the Options window.
+- Verified the initial value is **Button & Modifier**.
+- Verified the option changes to **Button only**, remains **Button only** after closing and reopening the Options window, and can be restored to **Button & Modifier**.
+- Queried the registered option through CoreRPG's native `/option HDHM` command and confirmed the resolved label and default value.
+- No Hidden Dice Lua error was observed during the focused session.
+
+This patch changes option registration metadata only. The v0.1.2 native button, GM-wide, persistence, and two-client privacy evidence above remains applicable. Requested Rolls, physical hotbar drag-and-drop, alternate themes, 2014/2024 content paths, and the full modifier/drag/double-click matrix were not repeated for v0.1.3.
+
 ## Forge release-candidate checklist
 
 Run the remaining checks with synthetic characters before claiming broader compatibility than the focused evidence above.

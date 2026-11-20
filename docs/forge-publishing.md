@@ -64,7 +64,7 @@ Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It
 
 **Source and releases:** https://github.com/alperozisik/FG-hidden-dice
 
-**Current version:** v0.1.2
+**Current version:** v0.1.3
 
 **Requirements:** Fantasy Grounds Unity and the D&D 5E ruleset, release 9 or later.
 
@@ -87,6 +87,7 @@ When reporting a problem, please include:
 
 ### Changelog
 
+- **v0.1.3:** Restored the **Hidden Dice Handle** campaign option in the current CoreRPG Options window.
 - **v0.1.2:** Updated the extension package for the Fantasy Grounds Forge file whitelist. The MIT license is included as `LICENSE.txt`, and the build now rejects unsupported file types.
 - **v0.1.1:** Added Requested Rolls compatibility so Requested Rolls controls its own delivery and visibility.
 - **v0.1.0:** Initial release.
@@ -105,10 +106,10 @@ The product icon is a marketing asset only. Do not add it to the extension runti
 
 ## Required real product screenshots
 
-Three real product screenshots from the isolated synthetic v0.1.2 QA campaign are included. Each is a tightly cropped JPEG below 300 KB:
+Three real product screenshots from isolated synthetic QA campaigns are included. Each is a tightly cropped JPEG below 300 KB:
 
 1. `docs/forge/images/hidden-dice-hidden-icon.jpg` shows the theme-native dice-tower button on a synthetic character sheet.
-2. `docs/forge/images/hidden-dice-radial-menu.jpg` shows **Toggle hidden roll** and the GM-only **Set hidden for all** and **Set visible for all** actions.
-3. `docs/forge/images/hidden-dice-privacy-feedback.jpg` shows GM-side tower results alongside a visible control roll.
+2. `docs/forge/images/hidden-dice-options.jpg` shows the **Hidden Dice Handle** campaign option and its default **Button & Modifier** value on Fantasy Grounds v5.1.15.
+3. `docs/forge/images/hidden-dice-privacy-feedback.jpg` shows GM-side private tower results alongside a visible control roll.
 
-The screenshots use synthetic characters and roll data and do not show a live campaign name or server alias. An Options screenshot is intentionally not included because the **Hidden Dice Handle** entry was not located during the current FG v5.1.15 focused check; that gap is recorded in `docs/testing.md`.
+The screenshots use synthetic characters and roll data and do not show a live campaign name or server alias.

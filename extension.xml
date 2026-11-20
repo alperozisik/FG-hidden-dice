@@ -3,7 +3,7 @@
 <root version="3.3" release="1">
 	<properties>
 		<name>Hidden Dice</name>
-		<version>0.1.2</version>
+		<version>0.1.3</version>
 		<author>Alper Ozisik</author>
 		<description>Choose which character sheet rolls are sent to the dice tower by default.</description>
 		<loadorder>90</loadorder>
@@ -13,7 +13,7 @@
 		</ruleset>
 	</properties>
 
-	<announcement text="Hidden Dice v0.1.2" font="emotefont" icon="dicetower_icon" />
+	<announcement text="Hidden Dice v0.1.3" font="emotefont" icon="dicetower_icon" />
 
 	<base>
 		<includefile source="strings/strings_hidden_dice.xml" />

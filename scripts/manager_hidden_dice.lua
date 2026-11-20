@@ -204,10 +204,12 @@ local function sendMarkedDragToTower(draginfo)
 	return true;
 end
 
-function onInit()
+local function registerOptions()
 	OptionsManager.registerOptionData({
 		sKey = OPTION_HANDLE_MODE,
 		sGroupRes = "option_header_game",
+		sLabelRes = "option_label_HDHM",
+		sType = "option_entry_cycler",
 		tCustom = {
 			labelsres = "hiddendice_option_handle_button_only",
 			values = "button",
@@ -216,6 +218,10 @@ function onInit()
 			default = "both",
 		},
 	});
+end
+
+function onInit()
+	registerOptions();
 
 	_fOriginalPerformAction = ActionsManager.performAction;
 	ActionsManager.performAction = HiddenDiceManager.performAction;
