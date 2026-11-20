@@ -2,13 +2,21 @@
 
 This file contains the prepared copy and asset checklist for the first Fantasy Grounds Forge listing. Replace bracketed placeholders before publishing.
 
+## Documentation synchronization checklist
+
+- Update `README.md`, this Forge listing draft, screenshots, and the complete Settings value/default/scope notes together when user-facing behavior changes.
+- If a translated guide is added later, update it in the same documentation change.
+- After the Forge item is published, apply the same approved copy and image changes to the live listing in the same release-documentation pass.
+
 ## Short description
 
-Choose which 5E character-sheet checks, saves, skills, initiative rolls, and death saves use the dice tower by default.
+Secret Stealth checks? Hidden knowledge rolls? Choose which 5E character-sheet rolls default to hidden and which stay public.
 
 ## Long description
 
-Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It lets players and GMs choose which supported character-sheet rolls use the dice tower by default without replacing the active theme's graphics.
+Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It lets the GM decide which supported character-sheet rolls default to hidden and which remain public, without replacing the active theme's graphics.
+
+A low visible Stealth result can change how a player behaves before the character has discovered anything. A visible History or Arcana result can reveal whether the information they receive is likely to be trustworthy. Hidden Dice preserves that uncertainty: players use the familiar sheet controls, while hidden results go to the GM behind the screen.
 
 ### Requirements
 
@@ -17,28 +25,30 @@ Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It
 
 ### Features
 
-- Toggle hidden rolling independently for supported rolls on each character sheet.
+- Choose the default hidden or visible state independently for supported rolls on each character sheet.
 - Supports ability checks, saving throws, skills, initiative, and death saves.
 - Uses the active ruleset or theme's normal-roll and dice-tower button resources.
 - Applies the selected state to related modifier or total fields when **Hidden Dice Handle** is set to **Button & Modifier**.
 - Preserves the selected hidden or visible state in newly created hotbar shortcuts.
-- Lets the GM set the matching roll to hidden or visible for every character at once.
-- Stores settings per character and roll.
+- Lets the GM set the matching roll to hidden or visible for every character at once, while also establishing the campaign default for that matching roll.
+- Stores per-character choices and GM-wide defaults in the campaign.
 
 ### Usage
 
-Right-click a supported d20 roll button and choose **Toggle hidden roll**. The button displays the active theme's dice-tower icon while hidden rolling is enabled.
+Right-click a supported d20 roll button and choose **Toggle hidden roll** for that character. The button displays the active theme's dice-tower icon while hidden rolling is enabled.
 
-The GM also receives **Set hidden for all** and **Set visible for all** radial-menu actions. These apply the selected roll setting to every character sheet.
+The GM also receives **Set hidden for all** and **Set visible for all** radial-menu actions. These apply the matching roll to every existing character and establish its campaign default. For example, set Stealth hidden across the party, leave Persuasion public, and give one character an individual Stealth override when needed.
 
 The campaign option **Hidden Dice Handle** provides two modes:
 
-- **Button & Modifier** (default): buttons, related modifier fields, drag rolls, double-click rolls, and newly created hotbar shortcuts use the selected state.
-- **Button only:** automatic handling is limited to the roll button.
+- **Button & Modifier** (default): the selected state applies to supported roll buttons and related modifier or total fields, including field double-clicks, field drag rolls, and newly created hotbar shortcuts.
+- **Button only:** automatic Hidden Dice handling is limited to supported roll buttons. Related modifier or total fields do not inherit the setting.
+
+This GM-controlled campaign option is managed by CoreRPG's Options system. It controls **which controls use the selected state**, not which checks are secret. Choose each roll's hidden/visible state through its radial menu. v0.1.3 QA verified that the selection remained after closing and reopening the Options window; a full campaign reload of this option value was not repeated for that release. Existing hotbar shortcuts retain the state captured when they were created; recreate them when they should adopt a changed source state.
 
 ### Requested Rolls compatibility
 
-Rolls initiated by Requested Rolls bypass Hidden Dice. Requested Rolls therefore retains control of player prompts, GM rolls, and result visibility. Character-sheet rolls and Hidden Dice hotbar shortcuts continue to use their configured state.
+Rolls initiated by Requested Rolls bypass Hidden Dice in either handling mode. Requested Rolls therefore retains control of player prompts, GM rolls, and result visibility. Character-sheet rolls and Hidden Dice hotbar shortcuts continue to use their configured state. The latest direct Requested Rolls regression evidence is from Hidden Dice v0.1.1; this combination was not repeated for v0.1.3.
 
 ### Installation and updates
 
@@ -58,7 +68,9 @@ License: MIT. Hidden Dice is free.
 
 ### Post body
 
-Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It changes the default handling of selected character-sheet rolls so they use the dice tower without requiring the player to drag every roll to the tower manually.
+Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It lets the GM decide which supported character-sheet rolls default to hidden and which stay public, without requiring players to drag every secret roll to the dice tower manually.
+
+Use hidden Stealth checks when the character should not know how well they concealed themselves. Hide History or Arcana checks when the visible result would reveal too much about the reliability of the information the GM provides. Players keep using the normal character-sheet controls.
 
 **Forge:** [Forge item URL]
 
@@ -68,11 +80,16 @@ Hidden Dice is a free Fantasy Grounds Unity extension for the D&D 5E ruleset. It
 
 **Requirements:** Fantasy Grounds Unity and the D&D 5E ruleset, release 9 or later.
 
-Supported rolls include ability checks, saving throws, skills, initiative, and death saves. Right-click a supported d20 button to toggle hidden rolling. GMs also receive radial-menu actions that set the matching roll to hidden or visible for every character sheet.
+Supported rolls include ability checks, saving throws, skills, initiative, and death saves. Right-click a supported d20 button to toggle hidden rolling for that character. GMs also receive **Set hidden for all** and **Set visible for all**, which apply the matching roll across existing characters and establish its campaign default.
 
-The **Hidden Dice Handle** campaign option controls whether the setting applies to both the button and related modifier fields or to the button only. Newly created hotbar shortcuts preserve the state active when they are created.
+Under **Options → Game**, the GM-controlled **Hidden Dice Handle** campaign option has two values:
 
-Requested Rolls requests bypass Hidden Dice, allowing Requested Rolls to retain control of prompts, GM rolls, and result visibility.
+- **Button & Modifier** (default): supported buttons, related modifier or total fields, field double-clicks, field drag rolls, and newly created hotbar shortcuts use the selected state.
+- **Button only:** automatic handling is limited to supported roll buttons.
+
+This option determines which controls honor the selected state; it does not choose which checks are hidden. CoreRPG manages it as a campaign option. v0.1.3 verified retention after closing and reopening Options, but did not repeat a full campaign reload for this value. Existing hotbar shortcuts retain their captured state and must be recreated when they should adopt a change.
+
+Requested Rolls requests bypass Hidden Dice, allowing Requested Rolls to retain control of prompts, GM rolls, and result visibility. The latest direct regression evidence for this integration is from v0.1.1; it was not repeated for v0.1.3.
 
 Installation is handled through the Forge and Fantasy Grounds updater. Add the item to your Forge inventory, run **Check for Updates**, and enable **Hidden Dice** when loading a 5E campaign.
 
