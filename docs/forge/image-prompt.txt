@@ -1,0 +1,11 @@
+Hidden Dice Forge cover image provenance
+
+Tool: built-in image_gen
+Use case: ads-marketing
+Asset type: first cover image for Fantasy Grounds Forge listing
+Repository derivative: hidden-dice-cover-forge.jpg (1200 x 800 JPEG)
+Processing: resized and compressed from the generated PNG without content retouching
+
+Prompt:
+
+Use case: ads-marketing. Asset type: first cover image for Fantasy Grounds Forge listing. Landscape 3:2. Exact and only text: "HIDDEN DICE" in elegant, extremely legible bold uppercase editorial serif type, upper third, generous margins. Subject: an overhead tabletop still life with a small dark wooden dice tower and its enclosed receiving tray, a folded charcoal game-master screen partially sheltering a single ivory twenty-sided die. A second small visible die outside the screen gives an understated contrast between secret and public rolls. The image must communicate private dice results controlled by the game master, not cheating or loaded dice. Style: restrained human art-directed modern tabletop RPG book illustration, subtle gouache with precise hand ink and matte printed paper texture. Cream paper background, charcoal, muted midnight blue, small warm ivory highlights. Strong flat graphic composition, three or four simple physically plausible objects, readable as shop thumbnail. No people, eyes, hands, UI, logos, extra text or watermark. Avoid generic AI fantasy art, glowing magic, dragons, ornate frame, excessive background detail, glossy 3D, dramatic lighting. Finished flat illustration, not a mockup.

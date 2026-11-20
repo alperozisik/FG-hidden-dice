@@ -94,11 +94,13 @@ When reporting a problem, please include:
 
 Hidden Dice intentionally contains no replacement graphics. The d20 and dice-tower resources used at runtime belong to the active Fantasy Grounds ruleset or theme and should not be copied into the Forge artwork.
 
-Use an original product cover or typographic mark for the Forge listing. The cover should communicate a concealed d20 or dice-tower concept without reproducing Fantasy Grounds theme assets.
+Use `docs/forge/images/hidden-dice-cover-forge.jpg` as the first Forge image. It is original promotional artwork, not a Fantasy Grounds screenshot or runtime resource. The cover communicates a concealed d20 and dice-tower concept without reproducing Fantasy Grounds theme assets.
+
+The cover is a 1200 x 800 JPEG below 300 KB. Its generation prompt is recorded in `docs/forge/image-prompt.txt`. The source PNG is retained outside this repository as the archival original; only the Forge-ready JPEG belongs in the repository.
 
 ## Required real product screenshots
 
-Capture these after the current live extension test queue is complete:
+No real product screenshots are included yet. Capture these after the current live extension test queue is complete and add them after the theoretical cover image:
 
 1. A 5E character sheet showing one visible-roll d20 button and one hidden-roll dice-tower button under the default theme.
 2. The radial menu showing **Toggle hidden roll** and the GM-only **Set hidden for all** and **Set visible for all** actions.
