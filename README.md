@@ -1,8 +1,8 @@
 # Hidden Dice
 
-[Fantasy Grounds forum thread](https://www.fantasygrounds.com/forums/showthread.php?88611) · [Fantasy Grounds Forge item 3792 — pending approval](https://forge.fantasygrounds.com/shop/items/3792/view) · [GitHub releases](https://github.com/alperozisik/FG-hidden-dice/releases)
+[Fantasy Grounds forum thread](https://www.fantasygrounds.com/forums/showthread.php?88611) · [Get Hidden Dice on Fantasy Grounds Forge](https://forge.fantasygrounds.com/shop/items/3792/view) · [GitHub releases](https://github.com/alperozisik/FG-hidden-dice/releases)
 
-> **Forge status:** The free Forge item and v0.1.3 build have been submitted, but the item is still pending approval/review and the build is queued for processing. The Forge page is not publicly available yet. Use the GitHub release for manual installation until approval and updater delivery are verified.
+> **Forge status:** Hidden Dice is approved, active, and publicly listed as a free Forge item. Build #1 for v0.1.3 is assigned to the Live channel. An independent end-to-end Fantasy Grounds Updater download was not repeated during this documentation update.
 
 <p align="center">
   <img src="docs/forge/images/hidden-dice-icon.png" alt="Hidden Dice product icon" width="112">
@@ -95,7 +95,7 @@ The build stages the repository's `LICENSE` file as `LICENSE.txt` inside the ext
 
 ### Fantasy Grounds Forge
 
-After the item is approved, publicly listed, and its Live build is verified, add Hidden Dice to your Forge inventory and run **Check for Updates** from the Fantasy Grounds launcher. The submitted item is free (0 Gold), categorized as a **5E Compatible Extension**, and configured for the Fantasy Grounds **Data** install location.
+Add the free Hidden Dice item to your Forge inventory and run **Check for Updates** from the Fantasy Grounds launcher. The active listing is categorized as a **5E Compatible Extension**, build #1 for v0.1.3 is on the **Live** channel, and the item uses the Fantasy Grounds **Data** install location.
 
 ### Manual installation
 
@@ -105,7 +105,7 @@ Enable **Hidden Dice** when loading a 5E campaign.
 
 ## Updating
 
-- **Forge:** Once the item is live, run **Check for Updates** from the Fantasy Grounds launcher.
+- **Forge:** Run **Check for Updates** from the Fantasy Grounds launcher.
 - **Manual:** Replace the existing `HiddenDice.ext` with the newer file, then restart Fantasy Grounds.
 
 If a manually installed project directory and a packaged `.ext` file are both present, remove the project directory unless it is intentionally being used for development.
@@ -114,7 +114,7 @@ If a manually installed project directory and a packaged `.ext` file are both pr
 
 Disable **Hidden Dice** for the campaign, then use the matching method:
 
-- **Forge:** Once the item is live, disable it in the Forge inventory and run **Check for Updates**. If a manually installed copy also exists, remove it from the Fantasy Grounds `extensions` directory.
+- **Forge:** Disable the item in the Forge inventory and run **Check for Updates**. If a manually installed copy also exists, remove it from the Fantasy Grounds `extensions` directory.
 - **Manual:** Delete `HiddenDice.ext` or the unpacked Hidden Dice project directory from the Fantasy Grounds `extensions` directory.
 
 Restart Fantasy Grounds after removing the extension.
